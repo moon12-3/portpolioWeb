@@ -1,0 +1,34 @@
+body {
+    background-color: white;
+    background-image: none;
+}
+
+.pContent {
+    text-align: center;
+    box-shadow: 9px 9px 10px #888;
+    background-color: white;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+}
+
+.bigTitle {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#first {
+    width: 100%;
+    height: 100vh;
+    background-color: #ccc;
+}
+
+@media screen and (min-width:1183px) {
+    .pContent {
+        width: 1064px;
+    }
+}
