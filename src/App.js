@@ -8,6 +8,7 @@ import Project from './components/Project';
 function App() {
   return (
     <BrowserRouter>
+      <div className='blackBg'>
         <Header></Header>
         <Routes>
           <Route path="/" element={<Main />} />
@@ -16,6 +17,7 @@ function App() {
   <Route path="/project" element={<Project />} />*/}
           <Route path="/projects" element={<Project/>}/>
         </Routes>
+        </div>
     </BrowserRouter>
   );
 }

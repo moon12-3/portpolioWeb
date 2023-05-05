@@ -2,13 +2,23 @@
 html, body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  
   margin : 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: black;
+  background-image: url(./img/back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: 'Pretendard-Regular';
   border-right: thin solid #ffffff;
+}
+
+.blackBg {
+  width: 100vw;
+  height: 100vh;
+  transition: opacity 0.5s ease-in-out;
+  background-color: rgb(0, 0, 0, 0.2);
+  
 }
 
 html::-webkit-scrollbar {
@@ -25,9 +35,13 @@ body.no-scroll {
   justify-content: space-between;
   list-style-type: none;
   width:80vw;
-  margin-top: 3vh;
+  padding-top: 3vh;
   margin-left: auto;
   margin-right: auto;
+}
+
+.fade-out {
+  opacity: 0;
 }
 
 .nav-list {
@@ -47,26 +61,13 @@ body.no-scroll {
 
 .logo {
   padding-left: 10vw;
+  padding-bottom: 20px;
+  margin-top: -5px;
   width: 272px;
   height: auto;
 }
 
-a {
-  text-decoration-line: none;
-  text-decoration-color: white;
-  opacity: 0.4;
-}
 
-a:hover, a:focus { 
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-a:visited {
-    /* a 태그 갔다왔을 때 색깔 black*/
-    color: white;
-    text-decoration-line: none;
-}
 
 @font-face {
   font-family: 'Pretendard-Regular';
@@ -75,25 +76,7 @@ a:visited {
   font-style: normal;
 }
 
-.title {
-  position: relative;
-  top: 30vh;
-  left: 20vw;
-  color: white;
-  font-size: 6rem;
-  font-family: 'Pretendard-Regular';
-}
 
-.de {
-  font-size: 2rem;
-  margin-bottom: 2vh;
-  opacity: 0.56;
-}
-
-.hi {
-  font-weight: 600;
-  letter-spacing : 0.07em;
-}
 
 .name {
   font-weight: 100;

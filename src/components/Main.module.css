@@ -14,3 +14,41 @@
     background-color: rgb(0, 0, 0, 0.2);
     
 }
+
+.title {
+  position: relative;
+  top: 20vh;
+  left: 20vw;
+  color: white;
+  font-size: 6rem;
+  font-family: 'Pretendard-Regular';
+}
+
+.de {
+  font-size: 2rem;
+  margin-bottom: 2vh;
+  opacity: 0.56;
+}
+
+.hi {
+  font-weight: 600;
+  letter-spacing : 0.07em;
+}
+
+.arrow {
+    position: relative;
+    bottom: -45vh;
+    left: 20vw;
+}
+
+.arrow > img {
+    float: left;
+}
+
+.arrow > div {
+    float: left;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 20px;
+    margin-top: -3px;
+}

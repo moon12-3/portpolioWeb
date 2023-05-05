@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 import logo from "../img/logo.png";
 import React, {useState, useEffect} from 'react';
+import styles from './Header.module.css';
 
 let s = (window.location.href).replace("http://localhost:3000", "");
 function Header(props) {
